@@ -211,7 +211,7 @@ export class GraphRequest {
                 url,
                 { 
                     method: RequestMethod.PATCH,
-                    body: content,
+                    body: JSON.stringify(content),
                     headers: new Headers(({ 'Content-Type' : 'application/json' })) 
                 }),
             callback
@@ -225,7 +225,7 @@ export class GraphRequest {
                 url,
                 {
                     method: RequestMethod.POST,
-                    body: content,
+                    body: JSON.stringify(content),
                     headers: new Headers(({ 'Content-Type' : 'application/json'})) 
                  }),
             callback
@@ -239,7 +239,7 @@ export class GraphRequest {
                 url,
                 { 
                     method: RequestMethod.PUT,
-                    body: content,
+                    body: JSON.stringify(content),
                     headers: new Headers({ 'Content-Type' : 'application/octet-stream' })
                 }),
             callback
